@@ -1,6 +1,8 @@
 public class Shape {
-    String color;
-    boolean filled;
+    protected String color;
+    protected boolean filled;
+    double area;
+    double perimeter;
     double getArea(){
         return 0;
     }

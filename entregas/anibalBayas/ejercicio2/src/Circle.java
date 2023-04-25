@@ -1,7 +1,5 @@
-public class Circle {
+public class Circle extends Shape {
     double radius;
-    double area;
-    double perimeter;
 
     public double getRadius() {
         return radius;
@@ -11,14 +9,15 @@ public class Circle {
         this.radius = radius;
     }
 
-    public double getArea() {
-        return area;
+    String ToString(){
+        return "Circle with radius: " + radius + " has area: " +  " and perimeter: ";
     }
 
-    public double getPerimeter() {
-        return perimeter;
+    double getArea() {
+        return super.getArea();
     }
-    String ToString(){
-        return "Circle with radius: " + radius + " has area: " + area + " and perimeter: " + perimeter;
+
+    double getPerimeter() {
+        return super.getPerimeter();
     }
 }

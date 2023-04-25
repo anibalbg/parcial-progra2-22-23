@@ -1,6 +1,7 @@
-public class Rectangle {
+public class Rectangle extends Shape {
     double width;
     double length;
+    double side=width+length;
 
     public double getWidth() {
         return width;
@@ -16,6 +17,13 @@ public class Rectangle {
 
     public void setLength(double length) {
         this.length = length;
+    }
+    double getArea() {
+        return super.getArea();
+    }
+
+    double getPerimeter() {
+        return super.getPerimeter();
     }
 
     String ToString(){
